@@ -1,0 +1,41 @@
+// algoritmo: menor e maior numero
+// autor: Alvaro
+// data: 15/08/2017 
+
+programa
+{
+	// blibiotecas
+	inclua biblioteca Matematica --> mat
+
+	funcao inicio()
+	{
+		//variaveis
+		inteiro numeroA, numeroB, numeroC, numeroD, maior1, maior2, maior, menor1, menor2, menor
+
+		// solicitar valores
+		escreva("digite numeroA:")
+		leia(numeroA)
+		
+		escreva("digite numeroB:")
+		leia(numeroB)
+		
+		escreva("digite numeroC:")
+		leia(numeroC)
+		
+		escreva("digite numeroD:")
+		leia(numeroD)
+
+		// verificar numeros
+		maior1 = mat.maior_numero(numeroA, numeroB)
+		maior2 = mat.maior_numero(numeroC, numeroD)
+		maior = mat.maior_numero(maior1, maior2)
+
+		menor1 = mat.menor_numero(numeroA, numeroB)
+		menor2 = mat.menor_numero(numeroC, numeroD)
+		menor = mat.menor_numero(menor1, menor2)
+		
+		// resultado
+		escreva( "\n> menor:", menor)
+		escreva( "\n> maior:", maior)
+	}
+}
