@@ -6,7 +6,7 @@ programa
 {
 	// blibiotecas
 	inclua biblioteca Matematica --> mat
-
+	inclua biblioteca Tipos --> tp
 	funcao inicio()
 	{
 		//variaveis
@@ -26,13 +26,13 @@ programa
 		leia(numeroD)
 
 		// verificar numeros
-		maior1 = mat.maior_numero(numeroA, numeroB)
-		maior2 = mat.maior_numero(numeroC, numeroD)
-		maior = mat.maior_numero(maior1, maior2)
+		maior1 = tp.real_para_inteiro(mat.maior_numero(numeroA +0.0, numeroB+0.0))
+		maior2 = tp.real_para_inteiro(mat.maior_numero(numeroC+0.0, numeroD+0.0))
+		maior = tp.real_para_inteiro(mat.maior_numero(maior1+0.0, maior2+0.0))
 
-		menor1 = mat.menor_numero(numeroA, numeroB)
-		menor2 = mat.menor_numero(numeroC, numeroD)
-		menor = mat.menor_numero(menor1, menor2)
+		menor1 = tp.real_para_inteiro(mat.menor_numero(numeroA+0.0, numeroB+0.0))
+		menor2 = tp.real_para_inteiro(mat.menor_numero(numeroC+0.0, numeroD+0.0))
+		menor = tp.real_para_inteiro(mat.menor_numero(menor1+0.0, menor2+0.0))
 		
 		// resultado
 		escreva( "\n> menor:", menor)
