@@ -1,0 +1,46 @@
+//algoritmo: ponto em area retangular
+//funcao:
+//autor:
+//data:
+
+programa
+{
+    //funcao principal
+    funcao inicio()
+    {
+    //variaveis
+    real xp, yp 
+    real xq, yq  
+    real xr, yr  
+
+    // apresentacao
+    escreva("ponto em area retangular\n")
+    
+    // solicitar pontos
+    escreva("entre com a coordenada do ponto inferior esquerdo")
+    leia(xp)
+    escreva("entre com a coordenada do ponto inferior esquerdo")
+    leia(yp)
+    escreva("entre com a coordenada do ponto superior direito")
+    leia(xq)
+    escreva("entre com a coordenada do ponto superior direito")
+    leia(yq)
+
+    // solicitar ponto verificado
+    escreva("entre com a coordenada do ponto ")
+    leia(xr)
+    escreva("entre com a coordenada do ponto ")
+    leia(yr)
+    
+    //verificar posicao
+    se(xr>xp e xr<xq e yr> yp e yr<yq) //dentro
+    escreva("dentro")
+
+    senao se(xr<xp ou xr>xq ou yr<yp) // fora
+    escreva("fora")
+    
+    senao escreva("na borda")
+
+    
+    }
+}
