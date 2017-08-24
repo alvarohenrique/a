@@ -1,0 +1,17 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero, resto
+		escreva("digite o numero:")
+		leia(numero)
+
+		resto = numero%2
+		
+		se (resto <= 0)
+			escreva("esse numero é par!")
+
+		senao 
+		escreva("esse numero é impar!")	
+	}
+}
