@@ -5,6 +5,9 @@
 
 programa
 {
+	// bibliotecas
+	inclua biblioteca Matematica --> mat
+	
     //funcao principal
     funcao inicio()
     {
@@ -14,6 +17,7 @@ programa
     real raio // tamanho do raio do circulo
     real xponto, yponto // coordenadas do ponto a ser verificado
     real diametro // tamanho do diametro do circulo
+    real distancia // distancia entre o ponto fornecido e o centro do circulo
     
     // apresentação
     escreva("ponto em area circular\n")
@@ -35,15 +39,15 @@ programa
     escreva("entre com a coordenada do ponto a ser verificado em y: ")
     leia(yponto)
 
-    //operaçoes mateematicas
+    //operaçoes matematicas
     raio = diametro/2
-    
+    distancia = mat.raiz((mat.potencia(ycentro - yponto,2)) + (mat.potencia(xcentro - xponto,2)) ,2) // distancia entre o ponto e o centro do circulo
+
     //verificar posicao
-    
-    se(xponto > xcentro - raio e xponto < xcentro + raio e yponto > ycentro - raio e yponto < ycentro + raio) // o ponto está dentro do circulo
+    se(distancia < raio) // o ponto está dentro do circulo
     escreva("o ponto se encontra dentro do circulo!")
 
-    senao se(xponto > xcentro + raio ou xponto < xcentro - raio ou yponto > ycentro + raio ou yponto < ycentro - raio ) // o ponto está fora do circulo
+    senao se(distancia > raio) // o ponto está fora do circulo
     escreva("o ponto se encontra fora do circulo!")
     
     senao escreva("o ponto se encontra na borda do circulo!")
