@@ -1,0 +1,27 @@
+programa
+{
+    funcao inicio()
+    {
+        
+real numero
+        real media = 0.0
+        inteiro quantidade
+
+        escreva("media em numeros\n")
+
+        escreva("entre com a quantidade de numeros: ")
+        leia(quantidade)
+
+        para(inteiro cont = 1; cont<= quantidade; cont ++)
+        {
+        escreva("entre com o ", cont, " ºnumero: ")    
+        leia(numero)
+
+        media = media + numero
+         
+        }
+
+        media = media/ quantidade
+        escreva(media)
+    }
+}
