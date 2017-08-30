@@ -1,0 +1,35 @@
+programa
+{
+ 
+    //
+    inclua biblioteca Util
+
+    //
+    funcao inicio()
+    {
+        //
+        const cadeia TITULO = "contagem regressiva"
+        //
+        
+inteiro segundos
+
+        //
+        
+        escreva("contagem regressiva\n")
+        //
+        escreva("quantidade de segundos:")
+        leia(segundos)
+
+        //
+        enquanto(segundos>=0)
+        {
+        limpa()
+
+        escreva(TITULO, "\n")
+        escreva(segundos, "\n")
+        segundos = segundos -1
+        Util.aguarde(1000)
+        
+        }
+    }
+}
