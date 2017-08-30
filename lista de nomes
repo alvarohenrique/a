@@ -1,0 +1,37 @@
+//
+//
+//
+//
+
+programa
+{
+    //
+    funcao inicio()
+    {
+        //
+        cadeia nome
+        
+cadeia listaDeNomes = ""
+        
+        //
+        faca
+        {
+            escreva("entre com nome (\"chega!\" para encerrar): ")
+            leia(nome)
+
+              se(nome != "chega!")
+            listaDeNomes = listaDeNomes + nome + "\n"
+            
+        
+            
+        }
+        
+        enquanto( nome != "chega!")
+        
+        escreva("lista de nomes: \n")    
+        
+        escreva(listaDeNomes)
+            
+            
+    }
+}
