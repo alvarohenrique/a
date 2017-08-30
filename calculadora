@@ -1,0 +1,59 @@
+//algoritmo: calculadora
+// funcao: (adicao, subtracao, multiplicaçao ou divisao)
+//autor: alvaro
+//data: 28/08/2017
+
+programa
+{
+    funcao inicio()
+    {
+    
+    real n1, n2, resultado
+    caracter operador
+    logico ocorreuErro = falso // flag para verificar
+    
+    //
+    escreva("calculadora \n")
+    
+    //
+    escreva("entre com o primeiro operando:")
+    leia(n1)
+    
+    escreva("entre com uma operacao (+, -, *, /)")
+    leia(operador)
+    
+    escreva("entre com o segundo operando:")
+    leia(n2)
+
+    //calculo
+    escolha(operador)
+        {
+        caso '+': 
+            resultado = n1+n2
+            pare
+        caso '-':
+            resultado = n1-n2
+            pare
+        caso '*': 
+            resultado = n1*n2
+            pare
+        caso '/': 
+            se(n2 != 0)
+            resultado = n1/n2
+            senao{
+                ocorreuErro = verdadeiro
+                escreva("divisao por zero!!")
+                }
+            pare
+
+        caso contrario:
+        ocorreuErro = verdadeiro
+        escreva("operacao invalida")
+        
+        //resultados
+        se(ocorreuErro == falso)
+        escreva(resultado)    
+        
+        }
+    }
+}
